@@ -1,0 +1,54 @@
+# ===============================================================
+# 全局或通用规则 (Global / Common Rules)
+# ===============================================================
+
+# 操作系统和编辑器生成的文件
+.DS_Store
+*.pem
+
+# 日志文件
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# 环境变量文件 (包含敏感信息)
+.env*
+
+# 测试覆盖率报告
+/coverage
+
+# ===============================================================
+# 前端文件夹规则 (/frontend)
+# ===============================================================
+
+# 依赖项
+/frontend/node_modules
+/frontend/.pnp
+/frontend/.pnp.*
+/frontend/.yarn/*
+!/frontend/.yarn/patches
+!/frontend/.yarn/plugins
+!/frontend/.yarn/releases
+!/frontend/.yarn/versions
+
+# Next.js 生成的文件
+/frontend/.next/
+/frontend/out/
+
+# 生产构建输出
+/frontend/build
+
+# Vercel 配置文件
+/frontend/.vercel
+
+# TypeScript 相关
+/frontend/*.tsbuildinfo
+/frontend/next-env.d.ts
+
+# 数据库生成代码 (假设在前端)
+/frontend/src/generated/
+
+# ===============================================================
+# 后端文件夹规则 (/backend)
+# ===============================================================
